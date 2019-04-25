@@ -10,8 +10,12 @@
 
 
 .toolbar{
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
     height: 125px;
+    background: #f5f7fa;
+    width: 99%;
+    /*background: linear-gradient(#ffffffff, #fbb710);*/
 }
 
 .checkbox{
@@ -24,37 +28,40 @@ div.search_base{
     padding-top: 80px;
     padding-left: 10px;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 calc(100% - 240px);
-    flex: 0 0 calc(100% - 240px);
+    -ms-flex: 0 0 calc(100% - 360px);
+    flex: 0 0 calc(100% - 360px);
     flex-direction: row;
-    width: calc(100% - 240px);
-    max-width: calc(100% - 240px);
+    width: calc(100% - 360px);
+    max-width: calc(100% - 360px);
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
       div.search_base {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 280px);
-        flex: 0 0 calc(100% - 280px);
-        width: calc(100% - 280px);
-        max-width: calc(100% - 280px); 
+        -ms-flex: 0 0 calc(100% - 400px);
+        flex: 0 0 calc(100% - 400px);
+        width: calc(100% - 400px);
+        max-width: calc(100% - 400px); 
     }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     div.search_base {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 calc(100% - 240px);
-        flex: 0 0 calc(100% - 240px);
-        width: calc(100% - 240px);
-        max-width: calc(100% - 240px);
+        -ms-flex: 0 0 calc(100% - 360px);
+        flex: 0 0 calc(100% - 360px);
+        width: calc(100% - 360px);
+        max-width: calc(100% - 360px);
     }
 }
+
 @media only screen and (max-width: 767px) {
     div.search_base {
         -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
-        width: 50%;
-        max-width: 50%;
+        -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+        width: 40%;
+        max-width: 40%;
         
     }
 }
@@ -78,7 +85,6 @@ div.search_base form {
     margin-right: 10px;
     z-index: 1;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.075); 
-    
 }
 
 div.search_base form input {
@@ -89,6 +95,7 @@ div.search_base form input {
     font-size: 14px;
     color: #6b6b6b; 
 }
+
 div.search_base form button {
     position: absolute;
     top: 0;
@@ -100,6 +107,33 @@ div.search_base form button {
     cursor: pointer;
     background-color: transparent;
     text-align: center; 
+}
+
+div.personal{
+    width: auto;
+    height: inherit;
+}
+
+div.personal input{
+    display: inline-block;
+    min-width: 60px;
+    height: 30px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #fbb710;
+}
+
+div.personal input:hover{
+    color: #ffffff;
+    background-color: #131212;
+    -webkit-transition: all 500ms ease 0s;
+    transition: all 500ms ease 0s;
+    text-decoration: none;
+    outline: 0 solid transparent;
+    font-weight: 400;
+    font-size: 14px; 
 }
 
 .cart-table{
