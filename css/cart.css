@@ -18,9 +18,10 @@
     /*background: linear-gradient(#ffffffff, #fbb710);*/
 }
 
-.checkbox{
+input.checkbox{
     height: 15px;
     width: 15px;
+    padding-left: 10px;
 }
 
 div.search_base{
